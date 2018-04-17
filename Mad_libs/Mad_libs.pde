@@ -22,7 +22,8 @@ void setup() {
   poem[i] = poem[i].replaceAll("<noun>", noun[k]);
   
   int l = int(random(adj.length-1));
-  poem[i] = poem[i].replaceAll("<adjectives>", adj[l]);
+  poem[i] = poem[i].replaceAll("<adjctives>", adj[l]);
+  
   
   println(poem[i]);
   
