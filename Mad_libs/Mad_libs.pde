@@ -16,13 +16,15 @@ void setup() {
   // Do something with entry i...
   
   int j = int(random(verbs.length-1));
-  verbs[i] = verbs[i].replaceAll("<verb>", verbs[j]);
+  poem[i] = poem[i].replaceAll("<verb>", verbs[j]);
   
   int k = int(random(noun.length-1));
-  noun[i] = noun[i].replaceAll("<noun>", noun[k]);
+  poem[i] = poem[i].replaceAll("<noun>", noun[k]);
   
   int l = int(random(adj.length-1));
-  adj[i] = adj[i].replaceAll("<adjectives>", adj[l]);
+  poem[i] = poem[i].replaceAll("<adjectives>", adj[l]);
+  
+  println(poem[i]);
   
   
 }
